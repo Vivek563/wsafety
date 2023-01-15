@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".RegisterNumberActivity">
+
+    <ImageView
+        android:id="@+id/girlVector"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="415dp"
+        android:src="@drawable/girl_vector" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="348dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="61dp">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="225dp"
+            android:layout_height="144dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/varela_round"
+            android:text="Enter Number To\nSend SMS\nin\nEMERGENCY!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/numberEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/varela_round"
+                android:hint="Number"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:autofillHints="phone"
+                android:textAlignment="center" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#00B7B7"
+            android:fontFamily="@font/varela_round"
+            android:onClick="saveNumber"
+            android:text="Finish"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
