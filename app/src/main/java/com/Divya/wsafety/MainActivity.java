@@ -145,4 +145,15 @@ public class MainActivity extends AppCompatActivity {
         });
         popupMenu.show();
     }
+
+    public void sos(View view) {
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel:" + "9651260202" ));
+
+        if (ContextCompat.checkSelfPermission(getApplicationContext(), CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+            startActivity(callIntent);
+        } else {
+            requestPermissions(new String[]{CALL_PHONE}, 1);
+        }
+    }
 }
