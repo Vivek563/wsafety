@@ -24,14 +24,14 @@
 
     <ImageView
         android:id="@+id/girlVector"
-        android:layout_width="wrap_content"
-        android:layout_height="186dp"
+        android:layout_width="184dp"
+        android:layout_height="168dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="107dp"
         android:layout_marginTop="22dp"
-        android:layout_marginEnd="105dp"
+        android:layout_marginEnd="120dp"
         android:src="@drawable/girl_vector" />
 
     <TextView
@@ -49,7 +49,7 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="270dp"
+        android:layout_height="354dp"
         android:layout_below="@+id/girlVector"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -57,7 +57,7 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="126dp"
         android:layout_marginEnd="65dp"
-        android:layout_marginBottom="110dp">
+        android:layout_marginBottom="61dp">
 
         <TextView
             android:id="@+id/textNum"
@@ -110,6 +110,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/start" />
 
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#00B7B7"
+            android:elevation="100dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="sos"
+            android:text="SOS"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:cornerRadius="10dp" />
 
     </RelativeLayout>
 
@@ -124,6 +140,8 @@
         android:text="Shake Your Device To Send Notification\nIf You Are In Trouble"
         android:textAlignment="center"
         android:textSize="18sp" />
+
+
 
 
 </RelativeLayout>
